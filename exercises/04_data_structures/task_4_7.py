@@ -16,3 +16,8 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+mac_str = mac.split(':')
+mac_str = ''.join(mac_str)
+mac_hex = int(mac_str, 16)
+mac_bin = bin(mac_hex)
+print(mac_bin.lstrip('0b'))
