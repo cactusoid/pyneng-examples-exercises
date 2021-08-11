@@ -50,3 +50,12 @@ london_co = {
         "routing": True,
     },
 }
+tmp = input('Введите имя устройства: ')
+keys = london_co[tmp].keys()
+keys = str(keys)
+keys = keys.lstrip('dict_keys')
+b = "[]'"
+for char in b:
+    keys = keys.replace(char, '')
+tmp_keys = input('Введите имя параметра {}: '.format(keys))
+print(london_co[tmp][tmp_keys])
