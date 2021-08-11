@@ -41,5 +41,16 @@ london_co = {
         "ip": "10.255.0.101",
         "vlans": "10,20,30",
         "routing": True,
-    },
+    }
 }
+tmp = input('Введите имя устройства: ')
+keys = london_co[tmp].keys()
+keys = str(keys).lstrip('dict_keys')
+b = "[]'"
+for char in b:
+    keys = keys.replace(char, '')
+try:
+    tmp_keys = input('Введите имя параметра {}: '.format(keys))
+    print(london_co[tmp][tmp_keys.lower()])
+except KeyError:
+    print('Такого параметра нет')
