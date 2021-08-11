@@ -52,8 +52,7 @@ london_co = {
 }
 tmp = input('Введите имя устройства: ')
 keys = london_co[tmp].keys()
-keys = str(keys)
-keys = keys.lstrip('dict_keys')
+keys = str(keys).lstrip('dict_keys')
 b = "[]'"
 for char in b:
     keys = keys.replace(char, '')
