@@ -27,7 +27,7 @@ trunk_template = [
 ]
 
 mode = {'access': access_template, 'trunk': trunk_template}
-vlans = {'access': 'Введите номер VLAN: ', 'trunk': 'Введите разрешенные VLANы: '}
+vlans = {'access': 'Введите номер VLAN: ', 'trunk': 'l: '}
 tmp = input('Введите режим работы интерфейса (access/trunk): ')
 interface = input('Введите тип и номер интерфейса: ')
 vlan = input(vlans[tmp])
